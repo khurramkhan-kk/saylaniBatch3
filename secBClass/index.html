@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Using tailwind in my html code</title>
+    <!-- external css linking -->
+     <link href="mystyle.css" rel="stylesheet"/>
+     <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .container { width: 1400px;}
+        .section_part1:hover {background-color: yellowgreen;}
+       
+    </style>
+</head>
+<body>
+    <div class="container">
+<div class="header">
+
+<h1>my blog</h1>
+
+<p>welcome to the blog<span>Unknow</span></p>
+</div>
+<!-- Center section -->
+ <div class="section_part grid grid-cols-2 gap-2">
+    <div class="section_part1 ">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmw2_zFJ1wAeEkc0YyaBeCzMnkUtWXTn6dhg&s" height="200p" width="300"/>
+        <h2>Title is here</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia distinctio dolor quaerat quia. Dicta, exercitationem non. Beatae quisquam eius suscipit pariatur molestias! Dolorem earum veritatis quidem assumenda, inventore enim minus!</p>
+    </div>
+<div class="section_part2">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmw2_zFJ1wAeEkc0YyaBeCzMnkUtWXTn6dhg&s" width="350px" height="400px"/>
+    <h2>Title here</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis corporis maxime iste beatae ducimus autem, dignissimos eligendi eius earum. Eum in ex omnis dicta tenetur nobis distinctio! Vitae, numquam ut.</p>
+
+</div>
+
+ </div>
+
+
+
+
+
+    </div>
+
+      </div>
+
+      <h3>Column span concept or classes</h3>
+
+      <!-- tailwind code -->
+<div class="header grid grid-cols-1">
+    <div class="bg-purple-500 h-1000">header</div>
+
+</div>
+      <div class="grid grid-cols-3 gap-4">
+        <div class="bg-red-500 text-white h-24">01</div>
+        <div class="bg-blue-500 text-white h-24">02</div>
+        <div class="">03</div>
+        <div class="col-span-2">04</div>
+        <div class="">05</div>
+        <div class="">06</div>
+        <div class="col-span-2">07</div>
+        <div>08</div>
+      </div>
+
+
+<!-- Tailwind classes for table -->
+ <table class="border-collapse border border-slate-400">
+    <tr>
+        <td class="border border-slate-300 bg-yellow-200">Name</td>
+        <td class="border border-slate-300">Age</td>
+    </tr>
+    <tr>
+        <td class="border border-slate-300">Student</td>
+        <td class="border border-slate-300">12-18</td>
+    </tr>
+    <tr>
+        <td class="border border-slate-300">Teacher
+            <button class="transition ease-in-out delay-150 bg-blue-500 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 duration-300 ...">
+                Save Changes
+              </button>
+        </td>
+        <td class="border border-slate-300">32-22</td>
+    </tr>
+ </table>
+
+</body>
+</html>
